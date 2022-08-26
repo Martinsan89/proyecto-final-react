@@ -1,0 +1,43 @@
+.navBar{
+    width: 100%;
+    background-color: lightskyblue;
+    height: 15rem ;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.brandBox{
+    width: 15%;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 0rem 2rem;
+    cursor: pointer;
+}
+.brandLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+    text-decoration: none;
+    color: gray;
+}
+.tagsDiv{
+    width: 30%;
+}
+.tagsUl{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+.tagsLi{
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    color: gray;
+    cursor: pointer;
+}
