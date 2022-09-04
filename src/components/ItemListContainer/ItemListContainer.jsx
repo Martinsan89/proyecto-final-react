@@ -1,36 +1,29 @@
-import React, {useState} from 'react'
-import { ProductList } from '../../Data/ProductList';
-import styles from '../ItemListContainer/ItemListContainer.module.css'
+import ItemList from "../ItemList/ItemList"
+import {ProductList} from '../../Data/ProductList'
+import {useState, useEffect} from 'react'
 
-const ItemListContainer = ({marca}) => {
 
-  const [counter, setCounter] = useState(0);
-    const increment = () => {
-      setCounter(counter + 1)
-    }
-    const decrement = () => {
-      setCounter(counter - 1)
-    }
+const ItemListContainer = ({greetins}) => {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    List.then((data) => {
+      setProducts(data)
+    }).catch((error) => console.log(error))
+  }, [])
+
+  const List = new Promise((resolve)=>{
+    setTimeout(() => {
+      resolve(ProductList)
+    },2000)
+  })
+  
   return (
-    <div className={`${styles.cardBox}`}>
-      {ProductList.map(product => {
-        return (
-          <div className={`${styles.cardDiv}`} key={product.id}>
-            <h2 style={{marginTop:'1rem'}}>{marca}</h2>
-            <div className={`${styles.cardBody}`}>
-              <div className={`${styles.cardTitle}`}>
-                <p style={{textAlign:'center'}}>{product.titulo}</p>
-                <p style={{marginTop:'2rem'}}>${product.precio}</p>
-              </div>
-              <div className={`${styles.counterDiv}`}>
-                <button onClick={increment}>+</button>
-                <p>{counter}</p>
-                <button onClick={decrement}>-</button>
-              </div>
-            </div>
-          </div>
-        )
-      })}
+    <div>
+      <div style={{margin:'auto', width:'40%', marginTop:'2rem', backgroundColor:'lightgray'}}>
+        <h3 style={{textAlign:'center'}}>{greetins}</h3>
+      </div>
+      <ItemList products={products}/>
     </div>
   )
 }

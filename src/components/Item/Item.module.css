@@ -1,11 +1,12 @@
 .cardBox{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 3rem;
     height: 13rem;
+    width: 100%;
 }
 .cardDiv{
-    width: 14%;
+    width: 90%;
+    height: 38vh;
+    padding: 1rem;
     border: 1px solid;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,36 @@
+.stock{
+    text-align: center;
+    margin:10px 0;
+}
+
+.counter{
+    display:flex; 
+    justify-content:space-evenly;
+    border:1px solid;
+    border-radius:1rem;
+    width: 60%;
+    margin: auto;
+}
+
+.btnCounter{
+    background:none;
+    width:20%; 
+    border:none;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+
+.AddCart{
+    text-align:center;
+    margin-top:1rem;
+}
+
+.btnAddCart{
+    background-color:lightBlue; 
+    border:none;
+    font-size:1.5rem; 
+    padding:10px;
+    border-radius:1rem; 
+    cursor:pointer;
+}
+
