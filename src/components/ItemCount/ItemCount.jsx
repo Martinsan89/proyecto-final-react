@@ -14,7 +14,7 @@ const ItemCount = ({stock}) => {
     }
      
   return (
-    <div style={{width:'90%'}}>
+    <div style={{width:'100%', paddingTop:'5rem'}}>
         {stock >=1 ? 
         <div>
             <div>

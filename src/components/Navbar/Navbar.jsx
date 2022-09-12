@@ -1,23 +1,37 @@
 import styles from '../Navbar/Navbar.module.css'
 import CartWidget from '../CartWidget/CartWidget'
 import logo from '../../assets/logo/malletsLogo.jpeg'
+import {NavLink} from 'react-router-dom'
 
 
 function Navbar() {
   return (
     <nav className={`${styles.navBar}`}>
       <div className={`${styles.brandBox}`}>
-        <a className={`${styles.brandLogo}`} href="#">
+        <NavLink to='/' className={`${styles.brandLogo}`} href="#">
           <h1>Mallets Shop</h1>
           <img style={{width:'33%'}} src={logo} alt="logo" />
-        </a>
+        </NavLink>
       </div>
       <div className={`${styles.tagsDiv}`}>
         <ul className={`${styles.tagsUl}`}>
-          <li className={`${styles.tagsLi}`}>Vibrafono</li>
-          <li className={`${styles.tagsLi}`}>Marimba</li>
-          <li className={`${styles.tagsLi}`}>Xilophone</li>
-          <li className={`${styles.tagsLi}`}>Glockenspield</li>
+          <NavLink to ={'/category/' + 'vibraphone'} className={`${styles.tagsLi}`}
+          style={({isActive}) => 
+            isActive ? 
+            {textDecoration:'none', backgroundColor:'black', color:'white'}
+            : {textDecoration:'none'}
+          }>Vibraphone</NavLink>
+          <NavLink to ={'/category/' + 'marimba'} className={`${styles.tagsLi}`}
+          style={({isActive}) => 
+          isActive ? 
+          {textDecoration:'none', backgroundColor:'black', color:'white'}
+          : {textDecoration:'none'}
+        }>Marimba</NavLink>
+          <NavLink to ={'/category/' + 'xylophone'} className={`${styles.tagsLi}`}style={({isActive}) => 
+            isActive ? 
+            {textDecoration:'none', backgroundColor:'black', color:'white'}
+            : {textDecoration:'none'}
+          }>Xylophone</NavLink>
         </ul>
       </div>
       <div>

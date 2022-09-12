@@ -1,4 +1,4 @@
-import ItemList from "../ItemList/ItemList"
+import ItemList from "../../components/ItemList/ItemList"
 import {ProductList} from '../../Data/ProductList'
 import {useState, useEffect} from 'react'
 
@@ -17,13 +17,15 @@ const ItemListContainer = ({greetins}) => {
       resolve(ProductList)
     },2000)
   })
-  
   return (
     <div>
       <div style={{margin:'auto', width:'40%', marginTop:'2rem', backgroundColor:'lightgray'}}>
         <h3 style={{textAlign:'center'}}>{greetins}</h3>
       </div>
+      {products.length > 0 ? 
       <ItemList products={products}/>
+      : <p style={{textAlign:'center', fontSize:'20px', marginTop:'1rem'}}>Loading ...</p>
+      }
     </div>
   )
 }

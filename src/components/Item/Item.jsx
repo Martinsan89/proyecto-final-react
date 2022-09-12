@@ -6,7 +6,7 @@ const Item = ({title, price, image}) => {
     <div className={`${styles.cardBox}`}>
           <div className={`${styles.cardDiv}`}>
             <div className={`${styles.cardBody}`}>
-                <img style={{width:'40%'}} src={image} alt='imagen' />
+                <img style={{width:'50%'}} src={image} alt='imagen' />
               <div className={`${styles.cardTitle}`}>
                 <p style={{textAlign:'center'}}>{title}</p>
                 <p style={{marginTop:'2rem'}}>${price}</p>
