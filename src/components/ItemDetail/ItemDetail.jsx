@@ -1,6 +1,10 @@
 import styles from '../ItemDetail/ItemDetail.module.css'
+import ItemCount from '../ItemCount/ItemCount'
+import { useState } from 'react'
 
 const ItemDetail = ({product}) => {
+
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -17,9 +21,11 @@ const ItemDetail = ({product}) => {
             </div>
           </div>
         </div>
+        <ItemCount setCount={setCount} count={count} stock={product.stock}/>
       </div>
       : <p style={{textAlign:'center', fontSize:'20px'}}>Loading ...</p>
     }
+    
     </>
   )
 }

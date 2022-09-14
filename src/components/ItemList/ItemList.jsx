@@ -1,5 +1,5 @@
 import Item from "../Item/Item"
-import ItemCount from "../ItemCount/ItemCount"
+import ItemDetailContainer from "../ItemCount/ItemCount"
 import {Link} from 'react-router-dom'
 
 
@@ -13,10 +13,9 @@ const ItemList = ({products}) => {
           <div style={{width:'100%', display:'flex', flexDirection:'column', alignItems:'center'}} key={product.id}>
             <Item title={product.title} 
             price={product.price}
-            image={product.image} />
+            image={product.image} instrument={product.category} />
           </div>
         </Link>  
-        <ItemCount stock={product.stock} />
         </div>
       ))}
     </div>

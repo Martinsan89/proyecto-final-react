@@ -1,6 +1,6 @@
 import styles from '../Item/Item.module.css'
 
-const Item = ({title, price, image}) => {
+const Item = ({title, price, image, instrument}) => {
 
   return (
     <div className={`${styles.cardBox}`}>
@@ -10,6 +10,7 @@ const Item = ({title, price, image}) => {
               <div className={`${styles.cardTitle}`}>
                 <p style={{textAlign:'center'}}>{title}</p>
                 <p style={{marginTop:'2rem'}}>${price}</p>
+                <p style={{marginTop:'2rem'}}>Instrument: {instrument}</p>
               </div>
             </div>
           </div>

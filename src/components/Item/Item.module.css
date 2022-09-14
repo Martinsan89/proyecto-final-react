@@ -1,6 +1,6 @@
 .cardBox{
     display: flex;
-    height: 10rem;
+    height: 48vh;
     width: 100%;
 }
 .cardDiv{
@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     padding: 1rem;
     height: 7rem;
 }

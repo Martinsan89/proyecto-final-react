@@ -1,21 +1,20 @@
-import { useState } from "react";
+import { NavLink } from 'react-router-dom'
 import styles from '../ItemCount/ItemCount.module.css'
 
 
-const ItemCount = ({stock}) => {
-
-    const [counter, setCounter] = useState(0);
+const ItemCount = ({ setCount, count, stock}) => {
     
-    const increment = () => {
-      counter < stock && setCounter(counter + 1) 
-    }
-    const decrement = () => {
-      counter > 0 && setCounter(counter - 1);
-    }
+  const increment = () => {
+    count < stock && setCount(count + 1)
+  }
+
+  const decrement = () => {
+    count > 0 && setCount(count - 1)
+  }
      
   return (
     <div style={{width:'100%', paddingTop:'5rem'}}>
-        {stock >=1 ? 
+         
         <div>
             <div>
                 <div className={`${styles.stock}`}>
@@ -24,15 +23,16 @@ const ItemCount = ({stock}) => {
                 </div>
                 <div className={`${styles.counter}`}>
                     <button className={`${styles.btnCounter}`}  onClick={increment}>+</button>
-                    <p style={{fontSize:'1.5rem'}}>{counter} </p>
+                    <h5 style={{fontSize:'1.5rem'}}>{count}</h5>
                     <button className={`${styles.btnCounter}`} onClick={decrement}>-</button>
                 </div>
             </div>
             <div className={`${styles.AddCart}`}>
-                <button className={`${styles.btnAddCart}`} >Agregar al carrito</button>
+                <NavLink to='/cart' className={`${styles.btnAddCart}`}>Cart of Mallets</NavLink>
             </div>
-        </div> : <p className={`${styles.stock}`}>No hay stock disponible</p>
-        }
+        </div> 
+        {/* : <p className={`${styles.stock}`}>No hay stock disponible</p> */}
+      
 
     </div>
   )
