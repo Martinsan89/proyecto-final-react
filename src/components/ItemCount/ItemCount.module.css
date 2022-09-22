@@ -20,17 +20,4 @@
     cursor:pointer;
 }
 
-.AddCart{
-    text-align:center;
-    margin-top:1rem;
-}
-
-.btnAddCart{
-    background-color:lightBlue; 
-    border:none;
-    font-size:1.5rem; 
-    padding:10px;
-    border-radius:1rem; 
-    cursor:pointer;
-}
 

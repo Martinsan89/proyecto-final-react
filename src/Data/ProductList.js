@@ -2,6 +2,7 @@ export const ProductList = [
   {
     id: 1,
     title: "Innovative Percussion",
+    model: "V1 SOFT",
     price: 15000,
     image:
       "https://d2bghjaa5qmp6f.cloudfront.net/resize/images/product-image/IP-IP3002.jpg",
@@ -12,6 +13,7 @@ export const ProductList = [
   {
     id: 2,
     title: "Balter Percussion",
+    model: "V2 MEDIUM - SOFT",
     price: 15000,
     image:
       "https://i5.walmartimages.com/asr/a9b4c959-d4e8-470d-84d6-0f31e80fdf46.478fe148a9675163d852d773b56a63dc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
@@ -22,6 +24,7 @@ export const ProductList = [
   {
     id: 3,
     title: "Vic Firth",
+    model: "V# Medium",
     price: 13000,
     image:
       "https://ae01.alicdn.com/kf/H324b0f9116f94d269bd41a800c732aa1l/Wood-Bass-Drum-Mallets-Sticks-Felt-Mallet-with-Wood-Handle-for-Percussion-Bass-Drum-Percussion-Sticks.jpg_Q90.jpg_.webp",
@@ -32,9 +35,10 @@ export const ProductList = [
   {
     id: 4,
     title: "Vic Firth",
+    model: "MCS6N SOFT",
     price: 13000,
     image:
-      "https://ae01.alicdn.com/kf/H324b0f9116f94d269bd41a800c732aa1l/Wood-Bass-Drum-Mallets-Sticks-Felt-Mallet-with-Wood-Handle-for-Percussion-Bass-Drum-Percussion-Sticks.jpg_Q90.jpg_.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_987945-MLA49827412049_052022-F.webp",
     stock: 0,
     weight: "130 gr",
     category: "marimba",
@@ -42,9 +46,9 @@ export const ProductList = [
   {
     id: 5,
     title: "Vic Firth",
+    model: "MCS7N MEDIUM - SOFT",
     price: 13000,
-    image:
-      "https://ae01.alicdn.com/kf/H324b0f9116f94d269bd41a800c732aa1l/Wood-Bass-Drum-Mallets-Sticks-Felt-Mallet-with-Wood-Handle-for-Percussion-Bass-Drum-Percussion-Sticks.jpg_Q90.jpg_.webp",
+    image: "https://m.media-amazon.com/images/I/411Er+XhIxL.jpg",
     stock: 13,
     weight: "150 gr",
     category: "marimba",
@@ -52,39 +56,43 @@ export const ProductList = [
   {
     id: 6,
     title: "Innovative Percussion",
+    model: "MCS8N MEDIUM",
     price: 15000,
     image:
-      "https://d2bghjaa5qmp6f.cloudfront.net/resize/images/product-image/IP-IP3002.jpg",
+      "https://cdn11.bigcommerce.com/s-ba0uaju45t/images/stencil/1200x1800/products/1419/2193/1914800002__60505.1623862600.jpg?c=2",
     stock: 25,
     weight: "150 gr",
     category: "marimba",
   },
   {
     id: 7,
-    title: "Innovative Percussion",
+    title: "Iñaki Sebastian",
+    model: "STANDARD XB3 MEDIUM - HARD",
     price: 15000,
     image:
-      "https://d2bghjaa5qmp6f.cloudfront.net/resize/images/product-image/IP-IP3002.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7dGsL5AJGnwwgDeAI662E_zGcXTnm_08bA&usqp=CAU",
     stock: 0,
     weight: "150 gr",
     category: "xylophone",
   },
   {
     id: 8,
-    title: "Innovative Percussion",
+    title: "Iñaki Sebastian",
+    model: "STANDARD XB2 MEDIUM",
     price: 15000,
     image:
-      "https://d2bghjaa5qmp6f.cloudfront.net/resize/images/product-image/IP-IP3002.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWf4wKIAxgkib3f2YQWg9lT3FCHdZM9BW2MmeZVb89FeU5p4_4QKqn3aYPADcGKalPkc&usqp=CAU",
     stock: 25,
     weight: "150 gr",
     category: "xylophone",
   },
   {
     id: 9,
-    title: "Innovative Percussion",
+    title: "Iñaki Sebastian",
+    model: "STANDARD XB1 SOFT",
     price: 15000,
     image:
-      "https://i5.walmartimages.com/asr/a9b4c959-d4e8-470d-84d6-0f31e80fdf46.478fe148a9675163d852d773b56a63dc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "https://www.marimbaone.com/sites/default/files/FE%20-%20MalletSet640x427-2.jpg",
     stock: 25,
     weight: "150 gr",
     category: "xylophone",

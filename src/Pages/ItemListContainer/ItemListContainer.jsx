@@ -15,7 +15,7 @@ const ItemListContainer = ({greetins}) => {
   const List = new Promise((resolve)=>{
     setTimeout(() => {
       resolve(ProductList)
-    },2000)
+    },1000)
   })
   return (
     <div>

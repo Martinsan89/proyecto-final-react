@@ -1,0 +1,13 @@
+.btnStore{
+    background-color:lightBlue; 
+    border:none;
+    font-size:1rem; 
+    padding:10px;
+    border-radius:1rem; 
+    cursor:pointer;
+    text-decoration: none;
+    color: black;
+    width: 40%;
+    text-align: center;
+    margin-top: 2rem;
+}

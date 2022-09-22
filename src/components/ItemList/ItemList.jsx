@@ -12,7 +12,7 @@ const ItemList = ({products}) => {
         <Link  to={'/item/' + product.id} style={{textDecoration:'none'}}>
           <div style={{width:'100%', display:'flex', flexDirection:'column', alignItems:'center'}} key={product.id}>
             <Item title={product.title} 
-            price={product.price}
+            price={product.price} model={product.model}
             image={product.image} instrument={product.category} />
           </div>
         </Link>  

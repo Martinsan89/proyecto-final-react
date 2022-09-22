@@ -1,8 +1,9 @@
 .cardBox{
     display: flex;
-    height: 32vh;
+    height: fit-content;
     width: 40%;
     margin: auto;
+    position: relative;
 }
 .cardDiv{
     width: 90%;
@@ -32,4 +33,23 @@
     margin-top: 1rem;
     justify-content: space-evenly;
     width: 40%;
+}
+
+.AddCart{
+    text-align:center;
+    margin-top:2rem;
+    position: absolute;
+    bottom: 7rem;
+    right: 4rem;
+}
+
+.btnAddCart{
+    background-color:lightBlue; 
+    border:none;
+    font-size:1.5rem; 
+    padding:10px;
+    border-radius:1rem; 
+    cursor:pointer;
+    text-decoration: none;
+    color: black;
 }
