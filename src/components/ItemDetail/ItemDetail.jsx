@@ -6,18 +6,19 @@ import { NavLink } from 'react-router-dom'
 
 const ItemDetail = ({product}) => {
 
+  // console.log(product)
+
   const [quantity, setQuantity] = useState(0);
   const {addToCart} = useContext(CartContext);
 
   const onAdd = ({product}) => {
-    
+    // console.log(product)
     addToCart(product, quantity)
 
   }
 
   return (
-    <>
-    {product.id  ? 
+    <> 
       <div className={`${styles.cardBox}`}>
         <div className={`${styles.cardDiv}`}>
           <div className={`${styles.cardBody}`}>
@@ -36,10 +37,7 @@ const ItemDetail = ({product}) => {
           <NavLink to={'/cart'} className={`${styles.btnAddCart}`}
           onClick={(e)=>{e.preventDefault, onAdd({product})}}>Cart of Mallets</NavLink >
         </div>}
-        
       </div>
-      : <p style={{textAlign:'center', fontSize:'20px'}}>Loading ...</p>
-    }
     </>
   )
 }

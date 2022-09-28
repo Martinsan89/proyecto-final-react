@@ -28,6 +28,7 @@ const Cart = () => {
                 <tr>
                   <th>Product</th>
                   <th>Model</th>
+                  <th>Id</th>
                   <th>Quantity</th>
                   <th>Price</th>
                   <th>Subtotal</th>
@@ -36,9 +37,10 @@ const Cart = () => {
               </thead>
             <tbody>
               {cart.map((i) => (
-                <tr key={i.item.id}>
+                <tr key={i.item.model}>
                   <td>{i.item.title}</td>
                   <td>{i.item.model}</td>
+                  <td>{i.item.id}</td>
                   <td style={{textAlign:'center'}}>
                     {i.quantity}
                   </td>
@@ -52,6 +54,7 @@ const Cart = () => {
             </tbody>
             <tfoot style={{paddingTop:'1rem'}}>
               <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
