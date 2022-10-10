@@ -20,16 +20,11 @@ export const CartProvider = ({children}) => {
     }
 
     const removeToCart = (productId) => {
-      let newCart = [];
-      cart.forEach((i) => {
-        if (i.item.id !== productId) {
-          newCart.push(i);
-        }
-        setCart(newCart);
-        setCounter(newCart.reduce((acc, i) => {
-          return acc += i.quantity
-        },0))
-      })
+      let newCart = cart.filter((i)=> i.item.id !== productId);
+      setCart(newCart);
+      setCounter(newCart.reduce((acc, i) => {
+        return acc += i.quantity
+      },0))
     }
 
     const deleteCart = () => {

@@ -1,20 +1,82 @@
-.btnStore{
-    background-color:lightBlue; 
+.cart{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.btns {
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.table{
+  display:flex;
+  justify-content:center;
+  margin-top:2rem
+}
+
+/* .compra{
+  margin-top:3rem;
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.btnDelete{
+    background-color:red; 
     border:none;
     font-size:1rem; 
     padding:10px;
     border-radius:1rem; 
     cursor:pointer;
     text-decoration: none;
-    color: black;
-    width: 40%;
+    color: white;
+    /* width: 40%; */
     text-align: center;
     margin-top: 2rem;
+}
+.btnStore{
+    background-color:green; 
+    border:none;
+    font-size:1rem; 
+    padding:10px;
+    border-radius:1rem; 
+    cursor:pointer;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+.btnNew{
+    background-color:lightblue; 
+    border:none;
+    font-size:1rem; 
+    padding:10px;
+    width: 33%;
+    border-radius:1rem; 
+    cursor:pointer;
+    text-decoration: none;
+    color: black;
+    margin: auto;
 }
 
 .compraRealizada {
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
+    /* justify-content: center;  */
     align-items: center; 
-    gap: 1rem;
+    /* gap: 1rem; */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

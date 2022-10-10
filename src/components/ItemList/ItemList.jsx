@@ -1,14 +1,11 @@
 import Item from "../Item/Item"
-// import ItemDetailContainer from "../ItemCount/ItemCount"
 import {Link} from 'react-router-dom'
 
 
 const ItemList = ({products}) => {
-
-  // console.log(products)
   
   return (
-    <div style={{display:'flex', justifyContent:'center', marginTop:'2rem', flexWrap:'wrap', gap:'10px'}}>
+    <div style={{display:'flex', justifyContent:'center', flexWrap:'wrap', gap:'10px', padding:'1rem'}}>
       {products.map((product) => (
         <div key={product.id} style={{width:'20%', border:'1px solid'}}>
         <Link  to={'/item/' + product.id} style={{textDecoration:'none'}}>

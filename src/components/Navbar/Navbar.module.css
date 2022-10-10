@@ -1,7 +1,7 @@
 .navBar{
     width: 100%;
     background-color: lightskyblue;
-    height: 15rem ;
+    height: 15vh ;
     margin: auto;
     display: flex;
     justify-content: center;

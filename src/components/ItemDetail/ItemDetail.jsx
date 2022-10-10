@@ -6,15 +6,11 @@ import { NavLink } from 'react-router-dom'
 
 const ItemDetail = ({product}) => {
 
-  // console.log(product)
-
   const [quantity, setQuantity] = useState(0);
   const {addToCart} = useContext(CartContext);
 
   const onAdd = ({product}) => {
-    // console.log(product)
     addToCart(product, quantity)
-
   }
 
   return (

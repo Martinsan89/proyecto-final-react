@@ -1,15 +1,13 @@
 import React, {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom';
-// import {ProductList} from '../../Data/ProductList'
 import ItemList from '../../components/ItemList/ItemList';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 
 
 const Category = () => {
     const {category} = useParams();
-    // console.log(category)
+
     const [productos, setProducts] = useState([]);
-    // console.log(productos)
 
     const getProducts = (()=>{
       const db = getFirestore();
@@ -17,14 +15,12 @@ const Category = () => {
       
       if(category) {
         const queryFilter = query(querySnapshot, where ('category', '==', category))
-        // console.log(queryFilter)
         getDocs(queryFilter)
         .then(resp => {
           const data = resp.docs.map((doc) => {
             return {id:doc.id, ...doc.data()};
           });
           setProducts(data)
-          // console.log(data)
         })
         .catch(err => console.log(err))
       } else {

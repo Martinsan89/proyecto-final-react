@@ -1,7 +1,7 @@
 import styles from '../Navbar/Navbar.module.css'
 import CartWidget from '../CartWidget/CartWidget'
 import logo from '../../assets/logo/malletsLogo.jpeg'
-import {NavLink, Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 
 function Navbar() {
